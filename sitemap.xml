@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://jnsn.in/posts/</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://jnsn.in/projects/</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <url>
+        <loc>https://jnsn.in/posts/2022-03-27-what-i-read-last-week-04.html</loc>
+    
+        <lastmod>2022-03-27T00:00:00-05:00</lastmod>
+    
+    
+        <changefreq>daily</changefreq>
+    
+
+    
+        <priority>0.5</priority>
+    
+    </url>
+
+    <url>
+        <loc>https://jnsn.in/posts/2022-01-15-what-i-read-last-week-03.html</loc>
+    
+        <lastmod>2022-01-15T00:00:00-06:00</lastmod>
+    
+    
+        <changefreq>daily</changefreq>
+    
+
+    
+        <priority>0.5</priority>
+    
+    </url>
+
+    <url>
+        <loc>https://jnsn.in/posts/2022-01-08-what-i-read-last-week-02.html</loc>
+    
+        <lastmod>2022-01-08T00:00:00-06:00</lastmod>
+    
+    
+        <changefreq>daily</changefreq>
+    
+
+    
+        <priority>0.5</priority>
+    
+    </url>
+
+    <url>
+        <loc>https://jnsn.in/posts/2022-01-01-what-i-read-last-week-01.html</loc>
+    
+        <lastmod>2022-01-01T00:00:00-06:00</lastmod>
+    
+    
+        <changefreq>daily</changefreq>
+    
+
+    
+        <priority>0.5</priority>
+    
+    </url>
+
+
+
+    <url>
+    
+        <loc>https://jnsn.in/reading-list</loc>
+    
+    
+        <lastmod>2020-10-02T00:00:00-05:00</lastmod>
+    
+    
+        <changefreq>daily</changefreq>
+    
+
+    
+        <priority>0.5</priority>
+    
+    </url>
+
+    <url>
+    
+        <loc>https://github.com/jan53n/algorithms-rust</loc>
+    
+    
+        <lastmod>2022-01-01T00:00:00-06:00</lastmod>
+    
+    
+        <changefreq>daily</changefreq>
+    
+
+    
+        <priority>0.5</priority>
+    
+    </url>
+
+    <url>
+    
+        <loc>https://jnsn.in/gol/</loc>
+    
+    
+        <lastmod>2022-05-30T00:00:00-05:00</lastmod>
+    
+    
+        <changefreq>daily</changefreq>
+    
+
+    
+        <priority>0.5</priority>
+    
+    </url>
+
+</urlset>
