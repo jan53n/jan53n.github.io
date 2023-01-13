@@ -1,0 +1,1 @@
+sudo docker run --rm --volume="$PWD:/srv/jekyll:Z" --volume="$PWD/.vendor/bundle:/usr/local/bundle:Z" -it jekyll/jekyll:3.8 jekyll $@
