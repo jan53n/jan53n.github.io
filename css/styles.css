@@ -3,10 +3,11 @@
 .grid {
     .col {
         height: 100%;
-
+        width: 100%;
         a,
         article {
             height: inherit;
+            width: inherit;
         }
     }
 }
