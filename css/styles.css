@@ -1,0 +1,16 @@
+@import "../beercss/beer.min.css";
+
+.grid {
+    .col {
+        height: 100%;
+
+        a,
+        article {
+            height: inherit;
+        }
+    }
+}
+
+.full-name {
+    text-wrap: balance;
+}
