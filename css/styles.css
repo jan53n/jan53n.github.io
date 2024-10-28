@@ -19,10 +19,8 @@
 
 .nav-header {
     nav {
-        a {
-            + :hover {
-                font-weight: 700;
-            }
+        a:hover {
+            font-weight: 700;
         }
     }
 }
