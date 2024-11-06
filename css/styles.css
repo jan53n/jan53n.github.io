@@ -20,7 +20,7 @@
 .nav-header {
     nav {
         a:hover {
-            font-weight: 700;
+            text-decoration: underline;
         }
     }
 }
@@ -30,8 +30,4 @@
 img {
     display: inline-block;
     text-align: center;
-}
-
-img::before {
-    content: '';
 }
