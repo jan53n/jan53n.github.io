@@ -25,9 +25,16 @@
     }
 }
 
-
-
 img {
     display: inline-block;
     text-align: center;
+}
+
+/* utils */
+.bg-inherit {
+    background-color: inherit;
+}
+
+.bold {
+    font-weight: bold;
 }
