@@ -36,3 +36,10 @@ img {
 .bold {
     font-weight: bold;
 }
+
+.card-title {
+    overflow: hidden;
+    height: 46px;
+    border-radius: unset;
+    text-overflow: ellipsis;
+}
