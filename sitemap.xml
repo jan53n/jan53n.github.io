@@ -7,11 +7,6 @@
         </url>
     
         <url>
-            <loc>https://jnsn.in/blog/</loc>
-            <lastmod>2024-10-26T03:39:52.567Z</lastmod>
-        </url>
-    
-        <url>
             <loc>https://jnsn.in/</loc>
             <lastmod>2024-10-26T03:39:52.567Z</lastmod>
         </url>
@@ -39,6 +34,11 @@
         <url>
             <loc>https://jnsn.in/reads/</loc>
             <lastmod>2025-01-07T11:10:19.973Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>https://jnsn.in/blog/</loc>
+            <lastmod>2025-01-09T04:25:08.136Z</lastmod>
         </url>
     
 </urlset>
