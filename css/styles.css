@@ -38,7 +38,6 @@ img {
 }
 
 .card-title {
-    min-height: 46px;
     border-radius: unset;
     text-overflow: ellipsis;
     overflow: hidden;
