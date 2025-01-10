@@ -38,8 +38,12 @@ img {
 }
 
 .card-title {
-    overflow: hidden;
-    height: 46px;
+    min-height: 46px;
     border-radius: unset;
     text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
