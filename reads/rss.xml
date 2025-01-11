@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+    <channel>
+        <title>Reads - Jansen N. J.</title>
+        <link>https://jnsn.in</link>
+        <description>Bookmarks by Jansen N. J.</description>
+        
+            <item>
+                <title>Miha Rekar - What Are Flame Graphs and How to Read Them, RubyConfBY 2017 - YouTube</title>
+                <link>https://www.youtube.com/watch?v=6uKZXIwd6M0</link>
+            </item>
+        
+            <item>
+                <title>API Design Patterns by J.J. Geewax | Goodreads</title>
+                <link>https://www.goodreads.com/book/show/51192053-api-design-patterns</link>
+            </item>
+        
+            <item>
+                <title>Inside look at modern web browser (part 3)  |  Blog  |  Chrome for Developers</title>
+                <link>https://developer.chrome.com/blog/inside-browser-part3</link>
+            </item>
+        
+            <item>
+                <title>怪獣8号 4 [Kaijū 8-gō 4] by Naoya Matsumoto | Goodreads</title>
+                <link>https://www.goodreads.com/book/show/58098866-8-4-kaij-8-g-4</link>
+            </item>
+        
+            <item>
+                <title>Stop using JWT for sessions - joepie91&#39;s Ramblings</title>
+                <link>http://cryto.net/~joepie91/blog/2016/06/13/stop-using-jwt-for-sessions/</link>
+            </item>
+        
+            <item>
+                <title>SAKAMOTO DAYS 3 by Yuto Suzuki | Goodreads</title>
+                <link>https://www.goodreads.com/book/show/58098905-sakamoto-days-3</link>
+            </item>
+        
+            <item>
+                <title>Back to Basics: Why We Chose Long Polling Over WebSockets</title>
+                <link>https://www.inferable.ai/blog/posts/postgres-nodejs-longpolling.mdx</link>
+            </item>
+        
+            <item>
+                <title>Going a Little Further</title>
+                <link>https://edanparker.hashnode.dev/going-a-little-further</link>
+            </item>
+        
+            <item>
+                <title> Holding the Hunger Games Hostage at the Gym: An Evaluation of Temptation Bundling - PMC </title>
+                <link>https://pmc.ncbi.nlm.nih.gov/articles/PMC4381662/</link>
+            </item>
+        
+            <item>
+                <title>Cross-Site Request Forgery is dead!</title>
+                <link>https://scotthelme.co.uk/csrf-is-dead/</link>
+            </item>
+        
+            <item>
+                <title>Can AI models reason like a human?</title>
+                <link>https://www.johndcook.com/blog/2025/01/07/can-ai-models-reason-like-a-human/</link>
+            </item>
+        
+    </channel>
+</rss>
