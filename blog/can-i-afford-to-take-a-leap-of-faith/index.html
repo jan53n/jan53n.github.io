@@ -15,7 +15,7 @@
     <meta property="og:locale" content="en_IN">
     <meta property="og:title" content="Can I Afford to Take a Leap of Faith?">
     <meta property="og:description" content="A self reflection on why it's hard to take a leap of faith">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self';script-src 'unsafe-inline' 'sha256-bsL+mi3oZzLLaqQfYT1VG97MlXdJVMfWdxL4zJZWWso=' 'sha256-DMxzebz+UDMxY8vhyVtJqs3f8nV/unUlxokxCC596BM=';object-src 'none';style-src 'self' 'unsafe-inline';worker-src 'none';img-src https://tr.jnsn.in 'self';font-src 'self';require-trusted-types-for 'script';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';script-src 'unsafe-inline' 'sha256-bsL+mi3oZzLLaqQfYT1VG97MlXdJVMfWdxL4zJZWWso=' 'sha256-DMxzebz+UDMxY8vhyVtJqs3f8nV/unUlxokxCC596BM=' 'sha256-8rsx8cQBXXaMFW3diUracNtUQnNrxBxYrglzhMKtyUo=' 'sha256-1J9jNM0iPmz4+eK554oznfpRjei8FEE7WelKW87trAM=';object-src 'none';style-src 'self' 'unsafe-inline';worker-src 'none';img-src https://tr.jnsn.in 'self';font-src 'self';require-trusted-types-for 'script';">
     <meta http-equiv="Referrer-Policy" content="no-referrer">
     <meta http-equiv="Content-Language" content="en">
 
@@ -52,6 +52,17 @@
           "name": "Emvigo Technologies"
         }
       }
+    </script>
+
+    <script defer="" async="" fetchpriority="low" integrity="sha256-8rsx8cQBXXaMFW3diUracNtUQnNrxBxYrglzhMKtyUo=">
+      window.addEventListener("DOMContentLoaded", () => {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document
+            .body
+            .classList
+            .add("dark");
+        }
+      });
     </script>
   </head>
 
@@ -96,8 +107,30 @@
     <div class="large-space"></div>
     <div class="large-space"></div>
 
-    <footer class="max">© Copyright 2025
-      Jansen N. J.</footer>
+    <footer>
+      <nav>
+        <div class="max">© Copyright 2025
+          Jansen N. J.</div>
+        <button id="colpref" class="circle transparent">
+          <i id="dmi">dark_mode</i>
+          <i id="lmi">light_mode</i>
+        </button>
+
+        <script integrity="sha256-1J9jNM0iPmz4+eK554oznfpRjei8FEE7WelKW87trAM=">
+          document
+            .getElementById("colpref")
+            .addEventListener("click", () => {
+              const cl = document.body.classList;
+
+              if (cl.contains("dark")) {
+                cl.remove("dark");
+              } else {
+                cl.add("dark");
+              }
+            });
+        </script>
+      </nav>
+    </footer>
     
   
 </body></html>
