@@ -48,20 +48,36 @@ img {
     -webkit-box-orient: vertical;
 }
 
-#dmi {
-    display: inherit;
+.dark :not(.auto) {
+    .dark-only {
+        display: block;
+    }
+
+    .light-only,
+    .auto-only {
+        display: none;
+    }
 }
 
-#lmi {
-    display: none;
-}
+.light :not(.auto) {
+    .light-only {
+        display: block;
+    }
 
-.dark {
-    #dmi {
+    .dark-only,
+    .auto-only {
         display: none;
     }
 
-    #lmi {
-        display: inherit;
+}
+
+.auto.dark, .auto.light {
+    .auto-only {
+        display: block;
+    }
+
+    .dark-only,
+    .light-only {
+        display: none;
     }
 }
