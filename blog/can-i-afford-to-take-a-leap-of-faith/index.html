@@ -15,10 +15,11 @@
     <meta property="og:locale" content="en_IN">
     <meta property="og:title" content="Can I Afford to Take a Leap of Faith?">
     <meta property="og:description" content="A self reflection on why it's hard to take a leap of faith">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self';script-src 'unsafe-inline' 'sha256-bsL+mi3oZzLLaqQfYT1VG97MlXdJVMfWdxL4zJZWWso=' 'sha256-DMxzebz+UDMxY8vhyVtJqs3f8nV/unUlxokxCC596BM=' 'sha256-oIUQoHD+CbHo/yGrKnnUkxe7qXE9vAmsLt8sSOqK97U=';object-src 'none';style-src 'self' 'unsafe-inline';worker-src 'none';img-src https://tr.jnsn.in 'self';font-src 'self';require-trusted-types-for 'script';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';script-src 'unsafe-inline' 'sha256-bsL+mi3oZzLLaqQfYT1VG97MlXdJVMfWdxL4zJZWWso=' 'sha256-DMxzebz+UDMxY8vhyVtJqs3f8nV/unUlxokxCC596BM=';object-src 'none';style-src 'self' 'unsafe-inline';worker-src 'none';img-src https://tr.jnsn.in 'self';font-src 'self';require-trusted-types-for 'script';">
     <meta http-equiv="Referrer-Policy" content="no-referrer">
     <meta http-equiv="Content-Language" content="en">
 
+    <script src="/js/global.js" defer="" async="" fetchpriority="low"></script>
     <link async="" rel="stylesheet" as="style" href="/beercss/beer.min.css">
     <link async="" rel="stylesheet" as="style" href="/css/styles.css">
     <link rel="prefetch" href="/" priority="low">
@@ -54,53 +55,6 @@
       }
     </script>
 
-    <script defer="" async="" fetchpriority="low" integrity="sha256-oIUQoHD+CbHo/yGrKnnUkxe7qXE9vAmsLt8sSOqK97U=">
-      addEventListener("DOMContentLoaded", () => {
-        const btn = document.getElementById("colpref");
-        const ls = localStorage;
-        const pref = ls.getItem("colpref");
-        const cl = document.body.classList;
-
-        if (pref === "0") {
-          cl.add("light");
-        } else if (pref === "1") {
-          cl.add("dark");
-        } else if (pref === null) {
-          cl.add("auto");
-
-          if (
-            matchMedia
-            ?.('(prefers-color-scheme: dark)')
-              ?.matches) {
-            cl.add("dark");
-          } else {
-            cl.add("light");
-          }
-        }
-
-        btn.addEventListener("click", () => {
-          if (cl.contains("auto")) {
-            cl.remove("auto");
-          }
-
-          if (cl.contains("dark")) {
-            cl.replace("dark", "light");
-            ls.setItem("colpref", "0");
-          } else {
-            cl.replace("light", "dark");
-            ls.setItem("colpref", "1");
-          }
-        });
-
-        btn.addEventListener("dblclick", () => {
-          ls.removeItem("colpref");
-
-          if (!cl.contains("auto")) {
-            cl.add("auto");
-          }
-        });
-      });
-    </script>
   </head>
 
   <body>
