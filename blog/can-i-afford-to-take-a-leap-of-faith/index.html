@@ -15,7 +15,7 @@
     <meta property="og:locale" content="en_IN">
     <meta property="og:title" content="Can I Afford to Take a Leap of Faith?">
     <meta property="og:description" content="A self reflection on why it's hard to take a leap of faith">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self';script-src 'unsafe-inline' 'sha256-bsL+mi3oZzLLaqQfYT1VG97MlXdJVMfWdxL4zJZWWso=' 'sha256-DMxzebz+UDMxY8vhyVtJqs3f8nV/unUlxokxCC596BM=' 'sha256-oIUQoHD+CbHo/yGrKnnUkxe7qXE9vAmsLt8sSOqK97U=';object-src 'none';style-src 'self' 'unsafe-inline';worker-src 'none';img-src https://tr.jnsn.in 'self';font-src 'self';require-trusted-types-for 'script';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';script-src 'unsafe-inline' 'sha256-bsL+mi3oZzLLaqQfYT1VG97MlXdJVMfWdxL4zJZWWso=' 'sha256-DMxzebz+UDMxY8vhyVtJqs3f8nV/unUlxokxCC596BM=' 'sha256-RY8Z+ZEyh3Yv6Pqyux1ITI2yj/Vp0Lxx81FAaa+e9Q8=';object-src 'none';style-src 'self' 'unsafe-inline';worker-src 'none';img-src https://tr.jnsn.in 'self';font-src 'self';require-trusted-types-for 'script';">
     <meta http-equiv="Referrer-Policy" content="no-referrer">
     <meta http-equiv="Content-Language" content="en">
 
@@ -54,7 +54,7 @@
       }
     </script>
 
-    <script defer="" async="" fetchpriority="low" integrity="sha256-oIUQoHD+CbHo/yGrKnnUkxe7qXE9vAmsLt8sSOqK97U=">
+    <script defer="" async="" fetchpriority="low" integrity="sha256-RY8Z+ZEyh3Yv6Pqyux1ITI2yj/Vp0Lxx81FAaa+e9Q8=">
       addEventListener("DOMContentLoaded", () => {
         const btn = document.getElementById("colpref");
         const ls = localStorage;
@@ -65,7 +65,7 @@
           cl.add("light");
         } else if (pref === "1") {
           cl.add("dark");
-        } else if (pref === null) {
+        } else {
           cl.add("auto");
 
           if (
