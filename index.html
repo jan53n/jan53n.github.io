@@ -15,7 +15,7 @@
     <meta property="og:locale" content="en_IN">
     <meta property="og:title" content="Jansen N. J.">
     <meta property="og:description" content="Jansen N. J. is a from Kerala, India, specializing in full-stack web development and SaaS solutions. Currently at , he focuses on building scalable applications. Experienced with JavaScript, TypeScript, Rust, React.js, Angular, SQL/NoSQL databases, Linux, Docker, Google Cloud Platform (GCP), and writing Parsers, Jansen enjoys solving complex problems, optimizing workflows, and working across the stack while continuously expanding his expertise.">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self';script-src 'unsafe-inline' 'sha256-bsL+mi3oZzLLaqQfYT1VG97MlXdJVMfWdxL4zJZWWso=' 'sha256-DMxzebz+UDMxY8vhyVtJqs3f8nV/unUlxokxCC596BM=' 'sha256-RY8Z+ZEyh3Yv6Pqyux1ITI2yj/Vp0Lxx81FAaa+e9Q8=';object-src 'none';style-src 'self' 'unsafe-inline';worker-src 'none';img-src https://tr.jnsn.in 'self';font-src 'self';require-trusted-types-for 'script';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';script-src 'unsafe-inline' 'sha256-bsL+mi3oZzLLaqQfYT1VG97MlXdJVMfWdxL4zJZWWso=' 'sha256-DMxzebz+UDMxY8vhyVtJqs3f8nV/unUlxokxCC596BM=' 'sha256-gQL6SugcMIgDs6+Js3G2u/Z03WeB5lRZks6+UOwuHR4=';object-src 'none';style-src 'self' 'unsafe-inline';worker-src 'none';img-src https://tr.jnsn.in 'self';font-src 'self';require-trusted-types-for 'script';">
     <meta http-equiv="Referrer-Policy" content="no-referrer">
     <meta http-equiv="Content-Language" content="en">
 
@@ -54,34 +54,38 @@
       }
     </script>
 
-    <script defer="" async="" fetchpriority="low" integrity="sha256-RY8Z+ZEyh3Yv6Pqyux1ITI2yj/Vp0Lxx81FAaa+e9Q8=">
+    <script defer="" async="" fetchpriority="low" integrity="sha256-gQL6SugcMIgDs6+Js3G2u/Z03WeB5lRZks6+UOwuHR4=">
       addEventListener("DOMContentLoaded", () => {
         const btn = document.getElementById("colpref");
         const ls = localStorage;
         const pref = ls.getItem("colpref");
         const cl = document.body.classList;
 
+        function setAuto() {
+          const isDark = matchMedia && matchMedia('(prefers-color-scheme: dark)').matches;
+          ls.removeItem("colpref");
+
+          if (!cl.contains("auto")) {
+            cl.add("auto");
+          }
+
+          cl.remove("dark", "light");
+          cl.add(
+            isDark
+            ? "dark"
+            : "light");
+        }
+
         if (pref === "0") {
           cl.add("light");
         } else if (pref === "1") {
           cl.add("dark");
         } else {
-          cl.add("auto");
-
-          if (
-            matchMedia
-            ?.('(prefers-color-scheme: dark)')
-              ?.matches) {
-            cl.add("dark");
-          } else {
-            cl.add("light");
-          }
+          setAuto();
         }
 
         btn.addEventListener("click", () => {
-          if (cl.contains("auto")) {
-            cl.remove("auto");
-          }
+          cl.remove("auto");
 
           if (cl.contains("dark")) {
             cl.replace("dark", "light");
@@ -92,13 +96,7 @@
           }
         });
 
-        btn.addEventListener("dblclick", () => {
-          ls.removeItem("colpref");
-
-          if (!cl.contains("auto")) {
-            cl.add("auto");
-          }
-        });
+        btn.addEventListener("dblclick", setAuto);
       });
     </script>
   </head>

@@ -48,6 +48,10 @@ img {
     -webkit-box-orient: vertical;
 }
 
+.dark, .light {
+    transition: background-color 0.2s ease;
+}
+
 .dark :not(.auto) {
     .dark-only {
         display: block;
