@@ -15,7 +15,7 @@
     <meta property="og:locale" content="en_IN">
     <meta property="og:title" content="Blog">
     <meta property="og:description" content="Jansen N. J. is a from Kerala, India, specializing in full-stack web development and SaaS solutions. Currently at , he focuses on building scalable applications. Experienced with JavaScript, TypeScript, Rust, React.js, Angular, SQL/NoSQL databases, Linux, Docker, Google Cloud Platform (GCP), and writing Parsers, Jansen enjoys solving complex problems, optimizing workflows, and working across the stack while continuously expanding his expertise.">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self';script-src 'unsafe-inline' 'sha256-bsL+mi3oZzLLaqQfYT1VG97MlXdJVMfWdxL4zJZWWso=' 'sha256-DMxzebz+UDMxY8vhyVtJqs3f8nV/unUlxokxCC596BM=' 'sha256-gQL6SugcMIgDs6+Js3G2u/Z03WeB5lRZks6+UOwuHR4=' 'sha256-2VXF1LisLlJ89TNUlVWHWjeLQU+e4ITz/wJ699vQnJY=';object-src 'none';style-src 'self' 'unsafe-inline';worker-src 'none';img-src https://tr.jnsn.in 'self';font-src 'self';require-trusted-types-for 'script';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';script-src 'unsafe-inline' 'sha256-bsL+mi3oZzLLaqQfYT1VG97MlXdJVMfWdxL4zJZWWso=' 'sha256-DMxzebz+UDMxY8vhyVtJqs3f8nV/unUlxokxCC596BM=' 'sha256-gQL6SugcMIgDs6+Js3G2u/Z03WeB5lRZks6+UOwuHR4=' 'sha256-mI24DELwANSqD/yZL0/c2J256JJ+MCTwGAJd4/WDeZ8=';object-src 'none';style-src 'self' 'unsafe-inline';worker-src 'none';img-src https://tr.jnsn.in 'self';font-src 'self';require-trusted-types-for 'script';">
     <meta http-equiv="Referrer-Policy" content="no-referrer">
     <meta http-equiv="Content-Language" content="en">
 
@@ -176,21 +176,23 @@
     </footer>
     
     
-    <script integrity="sha256-2VXF1LisLlJ89TNUlVWHWjeLQU+e4ITz/wJ699vQnJY=">
+    <script integrity="sha256-mI24DELwANSqD/yZL0/c2J256JJ+MCTwGAJd4/WDeZ8=">
         addEventListener("DOMContentLoaded", () => {
             const el = document.getElementById("banner-main-1");
 
             el
                 .querySelector("a")
                 .addEventListener("click", () => {
-                    el.remove();
+                    el.classList.remove("active");
                     localStorage.setItem("banner-main-1", 1);
                 }, {once: true});
 
             
                 if (localStorage.getItem("banner-main-1") !== null) {
-                    el.remove();
+                    el.classList.remove("active")
                     return;
+                } else {
+                    el.classList.add("active");
                 }
             
 
@@ -201,7 +203,7 @@
         }, {once: true});
     </script>
 
-    <div id="banner-main-1" class="snackbar active bottom primary">
+    <div id="banner-main-1" class="snackbar bottom primary">
         <div class="max">💡 Looking for talent? Jansen N. J is available for exciting projects.</div>
         
             <a href="https://linkedin.com/in/jan53n" target="_blank" class="inverse-link">Connect</a>
