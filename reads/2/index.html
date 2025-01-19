@@ -15,7 +15,7 @@
     <meta property="og:locale" content="en_IN">
     <meta property="og:title" content="Reads">
     <meta property="og:description" content="Discover a handpicked collection of interesting articles, blogs, and resources I’ve read. Perfect for curious minds seeking fresh insights and inspiration.">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self';script-src 'unsafe-inline' 'sha256-bsL+mi3oZzLLaqQfYT1VG97MlXdJVMfWdxL4zJZWWso=' 'sha256-DMxzebz+UDMxY8vhyVtJqs3f8nV/unUlxokxCC596BM=' 'sha256-gQL6SugcMIgDs6+Js3G2u/Z03WeB5lRZks6+UOwuHR4=' 'sha256-mI24DELwANSqD/yZL0/c2J256JJ+MCTwGAJd4/WDeZ8=';object-src 'none';style-src 'self' 'unsafe-inline';worker-src 'none';img-src https://tr.jnsn.in 'self';font-src 'self';require-trusted-types-for 'script';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';script-src 'unsafe-inline' 'sha256-bsL+mi3oZzLLaqQfYT1VG97MlXdJVMfWdxL4zJZWWso=' 'sha256-DMxzebz+UDMxY8vhyVtJqs3f8nV/unUlxokxCC596BM=' 'sha256-gQL6SugcMIgDs6+Js3G2u/Z03WeB5lRZks6+UOwuHR4=' 'sha256-QbRr7yZ6vfHCxTDkAUJfww4KxOC+zfCVdxMCqUclJa4=';object-src 'none';style-src 'self' 'unsafe-inline';worker-src 'none';img-src https://tr.jnsn.in 'self';font-src 'self';require-trusted-types-for 'script';">
     <meta http-equiv="Referrer-Policy" content="no-referrer">
     <meta http-equiv="Content-Language" content="en">
 
@@ -135,6 +135,21 @@
 <div class="space"></div>
 <div class="grid">
     <div class="s12 m6 l4 col">
+        <a title="API Design Patterns by J.J. Geewax | Goodreads" class="wave round wrap" href="https://www.goodreads.com/book/show/51192053-api-design-patterns" target="_blank">
+            <article class="no-elevate round no-padding">
+                <img class="responsive medium" fetchpriority="low" loading="lazy" src="/reads/assets/1736272417380.avif" style="background: linear-gradient(45deg, rgb(65, 57, 53),rgb(93, 89, 79),rgb(124, 107, 99),rgb(141, 126, 115));">
+                <div class="large-padding">
+                    <h6 class="small card-title">API Design Patterns by J.J. Geewax | Goodreads</h6>
+                    <nav>
+                        <div class="secondary-text max">www.goodreads.com</div>
+                        <i class="tertiary-text small" title="book">book</i>
+                    </nav>
+                </div>
+            </article>
+        </a>
+    </div>
+
+    <div class="s12 m6 l4 col">
         <a title="Miha Rekar - What Are Flame Graphs and How to Read Them, RubyConfBY 2017 - YouTube" class="wave round wrap" href="https://www.youtube.com/watch?v=6uKZXIwd6M0" target="_blank">
             <article class="no-elevate round no-padding">
                 <img class="responsive medium" fetchpriority="low" loading="lazy" src="/reads/assets/1736272224629.avif" style="background: linear-gradient(45deg, rgb(123, 95, 95),rgb(132, 107, 105),rgb(144, 114, 112),rgb(146, 108, 105));">
@@ -180,7 +195,7 @@
     </footer>
     
     
-    <script integrity="sha256-mI24DELwANSqD/yZL0/c2J256JJ+MCTwGAJd4/WDeZ8=">
+    <script integrity="sha256-QbRr7yZ6vfHCxTDkAUJfww4KxOC+zfCVdxMCqUclJa4=">
         addEventListener("DOMContentLoaded", () => {
             const el = document.getElementById("banner-main-1");
 
@@ -201,7 +216,7 @@
             
 
             setTimeout(() => {
-                el.remove();
+                el.classList.remove("active")
                 localStorage.setItem("banner-main-1", 1);
             }, 10000);
         }, {once: true});

@@ -15,7 +15,7 @@
     <meta property="og:locale" content="en_IN">
     <meta property="og:title" content="Reads">
     <meta property="og:description" content="Discover a handpicked collection of interesting articles, blogs, and resources I’ve read. Perfect for curious minds seeking fresh insights and inspiration.">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self';script-src 'unsafe-inline' 'sha256-bsL+mi3oZzLLaqQfYT1VG97MlXdJVMfWdxL4zJZWWso=' 'sha256-DMxzebz+UDMxY8vhyVtJqs3f8nV/unUlxokxCC596BM=' 'sha256-gQL6SugcMIgDs6+Js3G2u/Z03WeB5lRZks6+UOwuHR4=' 'sha256-mI24DELwANSqD/yZL0/c2J256JJ+MCTwGAJd4/WDeZ8=';object-src 'none';style-src 'self' 'unsafe-inline';worker-src 'none';img-src https://tr.jnsn.in 'self';font-src 'self';require-trusted-types-for 'script';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';script-src 'unsafe-inline' 'sha256-bsL+mi3oZzLLaqQfYT1VG97MlXdJVMfWdxL4zJZWWso=' 'sha256-DMxzebz+UDMxY8vhyVtJqs3f8nV/unUlxokxCC596BM=' 'sha256-gQL6SugcMIgDs6+Js3G2u/Z03WeB5lRZks6+UOwuHR4=' 'sha256-QbRr7yZ6vfHCxTDkAUJfww4KxOC+zfCVdxMCqUclJa4=';object-src 'none';style-src 'self' 'unsafe-inline';worker-src 'none';img-src https://tr.jnsn.in 'self';font-src 'self';require-trusted-types-for 'script';">
     <meta http-equiv="Referrer-Policy" content="no-referrer">
     <meta http-equiv="Content-Language" content="en">
 
@@ -135,6 +135,21 @@
 <div class="space"></div>
 <div class="grid">
     <div class="s12 m6 l4 col">
+        <a title="Intro | Putting the " you"="" in="" cpu"="" class="wave round wrap" href="https://cpu.land/" target="_blank">
+            <article class="no-elevate round no-padding">
+                <img class="responsive medium" fetchpriority="low" loading="lazy" src="/reads/assets/99cca3852e16edec65cd6f4053a7cd93.avif" style="background: linear-gradient(45deg, rgb(29, 29, 34),rgb(30, 30, 31),rgb(30, 30, 33),rgb(31, 28, 30));">
+                <div class="large-padding">
+                    <h6 class="small card-title">Intro | Putting the "You" in CPU</h6>
+                    <nav>
+                        <div class="secondary-text max">cpu.land</div>
+                        <i class="tertiary-text small" title="article">newspaper</i>
+                    </nav>
+                </div>
+            </article>
+        </a>
+    </div>
+
+    <div class="s12 m6 l4 col">
         <a title="Dandadan, Vol. 5 by Yukinobu Tatsu | Goodreads" class="wave round wrap" href="https://www.goodreads.com/book/show/101158709-dandadan-vol-5" target="_blank">
             <article class="no-elevate round no-padding">
                 <img class="responsive medium" fetchpriority="low" loading="lazy" src="/reads/assets/98288f571d1e7b9565542e799638ff31.avif" style="background: linear-gradient(45deg, rgb(51, 42, 48),rgb(117, 92, 103),rgb(179, 130, 140),rgb(189, 126, 128));">
@@ -208,21 +223,6 @@
             </article>
         </a>
     </div>
-
-    <div class="s12 m6 l4 col">
-        <a title="Cross-Site Request Forgery is dead!" class="wave round wrap" href="https://scotthelme.co.uk/csrf-is-dead/" target="_blank">
-            <article class="no-elevate round no-padding">
-                <img class="responsive medium" fetchpriority="low" loading="lazy" src="/reads/assets/4f4280b353fd0bd049eaaa054de2b5a4.avif" style="background: linear-gradient(45deg, rgb(53, 68, 97),rgb(74, 78, 94),rgb(84, 84, 94),rgb(84, 84, 94));">
-                <div class="large-padding">
-                    <h6 class="small card-title">Cross-Site Request Forgery is dead!</h6>
-                    <nav>
-                        <div class="secondary-text max">scotthelme.co.uk</div>
-                        <i class="tertiary-text small" title="article">newspaper</i>
-                    </nav>
-                </div>
-            </article>
-        </a>
-    </div>
 </div>
 
 <div class="space"></div>
@@ -255,7 +255,7 @@
     </footer>
     
     
-    <script integrity="sha256-mI24DELwANSqD/yZL0/c2J256JJ+MCTwGAJd4/WDeZ8=">
+    <script integrity="sha256-QbRr7yZ6vfHCxTDkAUJfww4KxOC+zfCVdxMCqUclJa4=">
         addEventListener("DOMContentLoaded", () => {
             const el = document.getElementById("banner-main-1");
 
@@ -276,7 +276,7 @@
             
 
             setTimeout(() => {
-                el.remove();
+                el.classList.remove("active")
                 localStorage.setItem("banner-main-1", 1);
             }, 10000);
         }, {once: true});
