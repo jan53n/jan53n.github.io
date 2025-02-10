@@ -1,4 +1,4 @@
-addEventListener("DOMContentLoaded", () => {
+const _f = () => {
     const btn = document.getElementById("colpref");
     const ls = localStorage;
     const pref = ls.getItem("colpref");
@@ -40,4 +40,10 @@ addEventListener("DOMContentLoaded", () => {
     });
 
     btn.addEventListener("dblclick", setAuto);
-});
+};
+
+if (document.readyState !== "loading") {
+    _f()
+} else {
+    addEventListener("DOMContentLoaded", _f);
+}
