@@ -101,5 +101,10 @@
                 <link>https://www.youtube.com/playlist?list=PLeKd45zvjcDFUEv_ohr_HdUFe97RItdiB</link>
             </item>
         
+            <item>
+                <title>How to efficiently compare strings with rolling hash | Franco Fernando</title>
+                <link>https://www.francofernando.com/blog/algorithms/2021-05-16-rolling-hash/</link>
+            </item>
+        
     </channel>
 </rss>
