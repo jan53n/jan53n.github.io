@@ -106,5 +106,10 @@
                 <link>https://www.francofernando.com/blog/algorithms/2021-05-16-rolling-hash/</link>
             </item>
         
+            <item>
+                <title>How to do distributed locking — Martin Kleppmann’s blog</title>
+                <link>https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html</link>
+            </item>
+        
     </channel>
 </rss>
