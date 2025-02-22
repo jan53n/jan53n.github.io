@@ -111,5 +111,10 @@
                 <link>https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html</link>
             </item>
         
+            <item>
+                <title>Breaking down CPU speed: How utilization impacts performance - The GitHub Blog</title>
+                <link>https://github.blog/engineering/architecture-optimization/breaking-down-cpu-speed-how-utilization-impacts-performance/</link>
+            </item>
+        
     </channel>
 </rss>
