@@ -27,6 +27,8 @@ const _f = () => {
         setAuto();
     }
 
+    btn.classList.remove("no");
+
     btn.addEventListener("click", () => {
         cl.remove("auto");
 

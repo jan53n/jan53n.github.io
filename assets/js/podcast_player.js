@@ -94,7 +94,6 @@ class PlayerElement extends HTMLElement {
 
                 audio.addEventListener("ended", () => {
                     ICON_ELEMENT.setPlayIcon();
-                    // DURATION_ELEMENT.clear();
                 });
 
                 audio.addEventListener("timeupdate", () => {
@@ -115,9 +114,8 @@ class PlayerElement extends HTMLElement {
             }
         });
 
-        PLAYER_BUTTON.appendChild(ICON_ELEMENT);
-        PLAYER_BUTTON.appendChild(DURATION_ELEMENT);
-        this.appendChild(PLAYER_BUTTON);
+        PLAYER_BUTTON.append(ICON_ELEMENT, DURATION_ELEMENT);
+        this.append(PLAYER_BUTTON);
     }
 }
 
