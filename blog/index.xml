@@ -7,4 +7,6 @@
 . So I want to learn about the interface type in Go, and the first thing I want to know is how it is formed within a program, and I headed to &lt;a href="https://go.dev/ref/spec#InterfaceType" class="link"&gt;
  Go Programming Language Specification
 &lt;/a&gt;
-.&lt;/p&gt;</description></item></channel></rss>
+.&lt;/p&gt;</description></item><item><title/><link>https://jnsn.in/blog/receiving-messages-from-above-draft-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jnsn.in/blog/receiving-messages-from-above-draft-1/</guid><description>&lt;p&gt;Everyone knows that computers can receive messages from network as TCP or UDP packets, question i am trying to explore here is how much can it receive in a second?&lt;/p&gt;
+&lt;p&gt;Depending on the protocol it can vary how many messages a server can receive due to the Protocol&amp;rsquo;s limitations, for simplicity we are only considering UDP.&lt;/p&gt;
+&lt;p&gt;We are only interested in the ways the messages can be received by the USER SPACE programs.&lt;/p&gt;</description></item></channel></rss>
